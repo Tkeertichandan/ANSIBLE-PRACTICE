@@ -41,7 +41,7 @@ jobs:
           file: ./S-MAPI/backend.Dockerfile
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backend-practice:latest
 
       # -------------------------------------------------
       # 💻 Step 5 — Build & Push Frontend Image
@@ -53,4 +53,4 @@ jobs:
           file: ./F-API/frontend.Dockerfile
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-frontend-practice:latest
